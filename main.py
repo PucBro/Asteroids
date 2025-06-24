@@ -41,7 +41,7 @@ def main():
         for aster in asteroid:
             for bullet in shot:
                 if aster.collision(bullet):
-                    aster.kill()
+                    aster.split()
                     bullet.kill()
             if aster.collision(player):
                 print("Game Over")
